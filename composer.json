@@ -1,0 +1,26 @@
+{
+    "name": "softtodo/doc-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://example.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^10.4",
+        "typo3/cms-rte-ckeditor": "^10.4",
+        "typo3/cms-fluid-styled-content": "^10.4",
+        "georgringer/news": "~8.5.2",
+        "mehrwert/phpmyadmin": "^5.6.4"
+   
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "doc_sitepackage"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Softtodo\\DocSitepackage\\": "Classes/"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+tt_content.vdivsitepackage_teaserimagetext =< lib.contentElement
+tt_content.vdivsitepackage_teaserimagetext {
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = TeaserImageText
+
+     dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+         references.fieldName = image
+         as = images
+      }
+}

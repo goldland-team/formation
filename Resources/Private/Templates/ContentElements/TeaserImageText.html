@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class=" row teaser-image-text {f:if(condition: '{data.imageposition} == 1', then: 'left', else: 'right')}">
+        <div class="col-md-6 image-teaser">
+
+            <f:if condition="{images.0.originalFile}">
+                <figure>
+                    <f:image image="{images.0.originalFile}" treatIdAsReference="1" alt="{images.0.properties.alternative}" title="{images.0.properties.title}" />
+                </figure>
+                <figcaption>{images.0.properties.description}</figcaption>
+            </f:if>
+        </div>
+
+        <div class=" col-md-6 text-teaser">
+            <f:if condition="{data.header}">
+                <div class="headline">
+                    <f:render partial="Header/CustomHeader" arguments="{header:data.header,layout:data.header_layout}" />
+                </div>
+            </f:if> 
+   
+            <f:if condition="{data.bodytext}">
+                <div class="text">
+                    {data.bodytext -> f:format.html()}
+                </div>
+            </f:if>
+            
+            <f:if condition="{data.link}">
+                <div class="link">
+                    <f:link.typolink parameter="{data.link}">
+                        {data.button -> f:format.html()} 
+                    </f:link.typolink>
+                </div>
+            </f:if>
+
+        </div>
+    </div>
+
+</html>

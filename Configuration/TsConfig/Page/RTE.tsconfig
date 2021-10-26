@@ -1,0 +1,9 @@
+#############
+#### RTE ####
+#############
+RTE {
+    default {
+        preset = doc_sitepackage
+    }
+}
+

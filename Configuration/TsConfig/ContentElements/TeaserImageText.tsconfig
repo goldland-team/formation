@@ -1,0 +1,17 @@
+##############################################
+#### CE WIZARD: Header Centered############
+##############################################
+
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        docsitepackage_teaserimagetext {
+            iconIdentifier = docsitepackage-teaserImageText
+            title = LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang_be.xlf:content_element.teaserImageText
+            description = LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang_be.xlf:content_element.teaserImageText.description
+            tt_content_defValues {
+                CType = docsitepackage_teaserimagetext
+            }
+        }
+    }
+    show := addToList(docsitepackage_teaserimagetext)
+}

@@ -1,0 +1,18 @@
+##############
+#### PAGE ####
+##############
+
+lib{
+   contentElement {
+      settings {
+         goldland {
+            pageUids {
+              
+            }
+            storagePids {
+              
+            }
+         }
+      }
+   }
+}

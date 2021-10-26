@@ -1,0 +1,30 @@
+######################
+#### EXTENSION ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:doc_sitepackage/Configuration/TypoScript/Extension/FluidStyledContent/setup.typoscript" condition="extension.isLoaded('fluid_styled_content') == 1">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:doc_sitepackage/Configuration/TypoScript/Extension/Seo/setup.typoscript" condition="extension.isLoaded('seo') == 1">
+
+#####################
+#### OVERWRITING ####
+#####################
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:doc_sitepackage/Configuration/TypoScript/ContentElements/" extensions="typoscript">
+
+################
+#### HELPER ####
+################
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+
+##############
+#### CONFIG ##
+##############
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Page/config.typoscript'
+
+##############
+#### PAGE ####
+##############
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Page/page.typoscript'
+
+##############
+#### LIB #####
+##############
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Page/lib.typoscript'

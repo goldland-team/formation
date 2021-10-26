@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<footer>
+    <div class="first-footer">
+        <p class="large">{settings.footerInformation.title}</p>
+    </div>
+    <div class="second-footer">
+        <div class="footer-link-left">
+            <div class="address">
+                <p class="regular-high">{settings.footerInformation.adress1}</p>
+                <p class="regular-high">{settings.footerInformation.adress2}</p>
+            </div>
+            <div class="contact">
+                <p class="regular-high">T <a href="tel:{settings.footerInformation.telephone}"
+                        class="footer-link">{settings.footerInformation.telephone}</a> </p>
+                <p class="regular-high">F <a href="fax:{settings.footerInformation.fax}"
+                        class="footer-link">{settings.footerInformation.fax}</a></p>
+                <p class="regular-high"><a href="mailto:{settings.footerInformation.email}"
+                        class="footer-link underlined">{settings.footerInformation.email}</a></p>
+            </div>
+        </div>
+        <f:if condition="{footerMenu}">
+            <div class="footer-link-right">
+                <f:for each="{footerMenu}" as="footerMenuItem">
+                    <a href="{footerMenuItem.link}" class="footer-link">{footerMenuItem.title}</a>
+                </f:for>
+            </div>
+        </f:if>
+    </div>
+
+    <div class="icons-wrapper">
+        <a href="{settings.footerInformation.social.twitter}" target="_blank">
+            <div class="icon twitter"></div>
+        </a>
+        <a href="{settings.footerInformation.social.youtube}" target="_blank">
+            <div class="icon youtube"></div>
+        </a>
+    </div>
+</footer>
+
+</html>

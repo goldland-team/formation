@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{header}">
+    <f:switch expression="{layout}">
+        <f:case value="1">
+            <h1 class="{positionClass}">
+                {header}
+            </h1>
+        </f:case>
+        <f:case value="2">
+            <h2 class="{positionClass}">
+                {header}
+            </h2>
+        </f:case>
+        <f:case value="3">
+            <h3 class="{positionClass}">
+                {header}
+            </h3>
+        </f:case>
+        <f:case value="4">
+            <h4 class="{positionClass}">
+                {header}
+            </h4>
+        </f:case>
+        <f:case value="10">
+            <h2 class="big">
+                {header}
+            </h2>
+        </f:case>
+        <f:case value="11">
+            <h2 class="bold">
+                {header}
+            </h2>
+        </f:case>
+
+        <f:case value="100">
+            <f:comment> -- do not show header -- </f:comment>
+        </f:case>
+    </f:switch>
+</f:if>
+</html>

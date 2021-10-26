@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:if condition="{topMenu}">
+        <ul class="top-menu">
+            <f:for each="{topMenu}" as="topMenuItem"  iteration="menuIndex">
+                <f:if condition="{topMenuItem}">
+                    <li class="first-nav-item">
+                        <a href="{topMenuItem.link}" class="small">{topMenuItem.title}</a>
+                    </li>
+                </f:if>
+            </f:for>
+            <f:security.ifAuthenticated>
+                <f:then>
+                    <li>
+                        <f:link.page class="outline login-action-button logout-btn" pageUid="{data.uid}" additionalParams="{logintype: 'logout'}">
+                            <f:translate key="LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:logout" />
+                        </f:link.page>
+                    </li>
+                    <li>
+                        <f:link.page class="login-action-mobile-button navbar-toggle offcanvas-toggle logout-btn" pageUid="{data.uid}" additionalParams="{logintype: 'logout'}">
+                            <f:translate key="LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:logout" />
+                        </f:link.page>
+                    </li>
+                </f:then>
+                <f:else>
+                    <li>
+                        <button class="outline login-action-button">
+                            <f:translate key="LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:login" />
+                        </button>
+                    </li>
+                    <li>
+                        <button class="outline login-action-mobile-button navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-login">
+                            <f:translate key="LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:login" />
+                        </button>
+                    </li>
+                </f:else>
+            </f:security.ifAuthenticated>
+            <li><button class="drawer-button navbar-toggle offcanvas-toggle" type="button" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas"></button></li>
+        </ul>
+    </f:if>
+</html>

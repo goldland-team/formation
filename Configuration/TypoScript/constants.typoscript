@@ -1,0 +1,103 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:doc_sitepackage/Configuration/TypoScript/Extension/Seo/constants.typoscript" condition="extension.isLoaded('seo') == 1">
+
+googleTagManager = GTM-MBHRXCL
+###################
+#### PAGE UIDs ####
+###################
+pageUids {
+   
+}
+
+storagePids {
+  
+}
+
+RegisterUidPage = 51
+##############################
+#### FLUID STYLED CONTENT ####
+##############################
+styles {
+    templates {
+        layoutRootPath = EXT:doc_sitepackage/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:doc_sitepackage/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:doc_sitepackage/Resources/Private/Templates/ContentElements/
+    }
+}
+
+############
+### PAGE ###
+############
+page {
+     fluidtemplate {
+        layoutRootPath = EXT:doc_sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:doc_sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:doc_sitepackage/Resources/Private/Templates/Page/
+    }
+    meta {
+        description =
+        author =
+        keywords =
+        viewport = width=device-width, initial-scale=1
+        robots = index,follow
+        apple-mobile-web-app-capable = no
+        compatible = IE=edge
+    }
+    tracking {
+        google {
+            trackingID =
+            anonymizeIp = 1
+        }
+    }
+}
+
+folder {
+    fe_user = 52
+}
+
+footerInformation{
+    menuUID = 22
+    title = Verband der Immobilienverwalter Deutschland e. V. (Documentation Deutschland)
+    social{
+        youtube = https://www.youtube.com/channel/UCDS8ay4jlpWxvbj08EuTZBA
+        twitter = https://twitter.com/Verwalterstimme
+    }
+    adress1 = Leipziger Platz 9
+    adress2 = 10117 Berlin
+    telephone = 030 300 96 79-0
+    fax = 030 300 96 79-21
+    email = office@doc.de 
+}
+
+##############
+### CONFIG ###
+##############
+config {
+    no_cache = 0
+    removeDefaultJS = 0
+    admPanel = 1
+    prefixLocalAnchors = all
+    sendCacheHeaders = 1s
+}
+[applicationContext == "Development"]
+    config{
+        no_cache = 1
+    }
+[GLOBAL]
+####################
+#### PLugin KPI ####
+####################
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Extension/KPI/constants.typoscript'
+
+####################
+## PLugin Gallery ##
+####################
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Extension/Gallery/constants.typoscript'
+
+########################
+## PLugin Publication ##
+########################
+@import 'EXT:doc_sitepackage/Configuration/TypoScript/Extension/Publication/constants.typoscript'

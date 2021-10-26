@@ -1,0 +1,150 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<header>
+    <a class="img-link" href='/'>
+        <figure class="logo">
+                <f:image src="EXT:doc_sitepackage/Resources/Public/Img/Logo/logo.png"></f:image>
+        </figure>
+    </a>
+    <div class="menu-wrapper">
+        <f:render partial="Structure/FirstNav" arguments="{_all}" />
+        <div class="container desktop-menu">
+            <div class="row">
+                <ul class="col-md-12  pl-0 pr-0 nav-menu">
+                    <li class="login-wrapper">
+                        <div class="submenu-wrapper">
+                            <div class="container h-100">
+                                <div class="row h-100">
+                                    <div class="col-11 offset-1">
+                                        <div class="content-wrapper h-100">
+                                            <div class="description">
+                                                <div class="menu-description-title">
+                                                    {f:translate(key:'LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:login')}
+                                                </div>
+                                                <p class="primary">
+                                                    {f:translate(key:'LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:loginText')}
+                                                </p>
+                                                <a href="{f:uri.page(pageUid:'{settings.goldland.pageUids.register}')}"
+                                                    class="outline">{f:translate(key:'LLL:EXT:doc_sitepackage/Resources/Private/Language/locallang.xlf:register')}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <f:for each="{mainnavigation}" as="mainnavigationItem">
+                        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+                            <a class="header-link" href="{mainnavigationItem.link}" target="{mainnavigationItem.target}"
+                                title="{mainnavigationItem.title}">
+                                {mainnavigationItem.title}
+                            </a>
+                            <f:if condition="{mainnavigationItem.children}">
+                                <div class="submenu-wrapper">
+                                    <div class="container h-100 py-40">
+                                        <div class="row h-100">
+                                            <div class="col-11 offset-1">
+                                                <div class="content-wrapper h-100">
+                                                    <ul>
+                                                        <f:for each="{mainnavigationItem.children}" as="child">
+                                                            <li class="{f:if(condition: child.active, then:'active')}">
+                                                                <a href="{child.link}" class="regular"
+                                                                    target="{child.target}" title="{child.title}">
+                                                                    {child.title}
+                                                                </a>
+                                                            </li>
+                                                        </f:for>
+                                                    </ul>
+
+                                                    <f:if
+                                                        condition="{mainnavigationItem.data.menu_title} || {mainnavigationItem.data.menu_text} || {mainnavigationItem.data.menu_link}">
+                                                        <div class="description">
+                                                            <f:if condition="{mainnavigationItem.data.menu_title}">
+                                                                <div class="menu-description-title">
+                                                                    {mainnavigationItem.data.menu_title}</div>
+                                                            </f:if>
+                                                            <f:if condition="{mainnavigationItem.data.menu_text}">
+                                                                <p class="primary">{mainnavigationItem.data.menu_text}
+                                                                </p>
+                                                            </f:if>
+                                                            <f:if condition="{mainnavigationItem.data.menu_link} && {mainnavigationItem.data.menu_link_title}">
+                                                                <f:link.typolink
+                                                                    parameter="{mainnavigationItem.data.menu_link}"
+                                                                    class="outline">
+                                                                    {mainnavigationItem.data.menu_link_title}
+                                                                </f:link.typolink>
+                                                            </f:if>
+                                                        </div>
+                                                    </f:if>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </f:if>
+                        </li>
+                    </f:for>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-offcanvas navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+            <div class="offcanvas-body">
+                <ul class="nav-menu">
+                    <f:for each="{mainnavigation}" as="mainnavigationItem" iteration="menuIndex">
+                        <f:if condition="{mainnavigationItem.children}">
+                            <f:then>
+                                <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+                                    <a class="header-link has-children" href="{mainnavigationItem.link}"
+                                        data-target="#subMenu-{menuIndex.index}" data-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="subMenu-{menuIndex.index}">
+                                        {mainnavigationItem.title}
+                                    </a>
+                            </f:then>
+
+                            <f:else>
+                                <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+                                    <a class="header-link" href="{mainnavigationItem.link}"
+                                        target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                                        {mainnavigationItem.title}
+                                    </a>
+                            </f:else>
+
+                        </f:if>
+                        <f:if condition="{mainnavigationItem.children}">
+                            <ul class="collapse" id="subMenu-{menuIndex.index}">
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <li class="{f:if(condition: child.active, then:'active')}">
+                                        <a class="regular" href="{child.link}" target="{child.target}"
+                                            title="{child.title}">
+                                            {child.title}
+                                        </a>
+                                    </li>
+                                </f:for>
+                            </ul>
+                        </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+                <ul class="top-menu">
+                    <f:for each="{footerMenu}" as="footerMenuItem">
+                        <li>
+                            <a href="{footerMenuItem.link}" class="regular">{footerMenuItem.title}</a>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-offcanvas navbar-offcanvas-login navbar-offcanvas-right" id="js-bootstrap-offcanvas-login">
+            <div class="login-mobile offcanvas-body mobile-canvas">
+               
+            </div>
+        </div>
+    </nav>
+</header>
+
+</html>
