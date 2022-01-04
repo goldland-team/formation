@@ -27258,18 +27258,6 @@ textarea.form-control {
     padding-right: 0;
     padding-left: 0; } }
 
-/* ------------------------------------
-The complete Bootstrap grid system
-[!] Don't change declaration order; Only change pixel values or grid columns if desired
-=======================================
-Did you know?
-
-You can use mixins provided by Bootstrap to create custom columns (and other grid elements);
-Formula is: $grid-columns ÷ <number> = <variable>
-
-Example for 5 columns (12 ÷ 5 = 2.4) and breakpoint 'sm':
-@include make-sm-column(2.4);
------------------------------------- */
 /*
 
 Blue colors
@@ -27341,14 +27329,6 @@ But don't forget to hide these when going live!
   font-weight: 700;
   font-display: swap;
   src: url("../Fonts/roboto-condensed/RobotoCondensed-BoldItalic.ttf"); }
-
-/* Isonorm3098 LW20 Regular */
-@font-face {
-  font-family: 'Isonorm3098 LW20';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../Fonts/isonorm-3098/Isonorm-3098-Regular.otf"); }
 
 /* ------------------------------------
   Font-weight
@@ -29362,6 +29342,9 @@ footer {
   width: 100%;
   padding: 20px; }
 
+.style-guide .nav-pills ul li {
+  list-style: none; }
+
 .style-guide .nav-pills a {
   color: #ff8700; }
   .style-guide .nav-pills a.nav-link {
@@ -29378,7 +29361,8 @@ footer {
 .style-guide .expresion {
   color: #ff8700; }
 
-.style-guide h1.mb-20, .style-guide .mb-20.h1-tag, .style-guide h2.mb-20 {
+.style-guide h1.mb-20, .style-guide .mb-20.h1-tag,
+.style-guide h2.mb-20 {
   margin-top: 35px !important; }
 
 .style-guide ul.first {
@@ -29386,20 +29370,7 @@ footer {
 
 .style-guide ul.second {
   margin-left: 30px;
-  list-style: none;
-  /* Remove default bullets */ }
-  .style-guide ul.second li:before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #ff8700;
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */ }
+  list-style: none; }
 
 /* ------------------------------------
 6. Conditionals
