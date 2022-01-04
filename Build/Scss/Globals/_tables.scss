@@ -1,0 +1,30 @@
+table{
+  tr{
+    &:not(:last-child){
+      border-bottom: 1px solid $color-neutral-003;
+    }
+    td{
+      color: $color-neutral-010;
+      font-size: $font-size-tiny-3;
+      line-height: $line-height-tiny-3;
+      &:first-child{
+        color: $color-neutral-007;
+        font-size: $font-size-tiny-3;
+        line-height: $line-height-small-5;
+        @include media-breakpoint-up(md){
+          font-size: $font-size-tiny-1;
+          line-height: $line-height-tiny-0;
+        }
+      }
+
+      &.to-right{
+        text-align: right;
+      }
+    }
+  }
+  &.no-borders{
+    tr{
+      border-bottom: unset;
+    }
+  }
+}

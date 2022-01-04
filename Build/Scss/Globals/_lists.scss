@@ -1,0 +1,99 @@
+ol, ul{
+  padding-left: 20px;
+  list-style-position: outside;
+  margin-left: 11px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  li{
+    color: $color-neutral-011;
+    font-size: $font-size-small-1;
+    line-height: $line-height-small-1;
+    margin-bottom: 13px;
+    padding-left: 6px;
+    @include media-breakpoint-up(md){
+      padding-left: 3px;
+      font-size: $font-size-regular;
+      line-height: $line-height-regular;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+ul{
+  list-style-image: url(../Img/icons/dot.svg);
+  &.typo3-messages{
+    list-style: none;
+    padding-left: 0;
+  }
+  &.normal-bullets{
+    list-style-type: disc;
+    list-style-image: none;
+    margin-left: 0;
+    padding-left: 18px;
+    li{
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+  }
+  &.download-list{
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    li{
+      margin-bottom: 5px;
+      font-size: $font-size-tiny-3;
+      line-height: $line-height-regular;
+      position: relative;
+      padding-left: 27px;
+      &:before{
+        position: absolute;
+        left: 0;
+        content: "";
+        background-image: url(../Img/icons/download-cloud.svg);
+        width: 16px;
+        height: 16px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 5px;
+
+      }
+      a{
+        text-decoration: underline;
+        font-size: $font-size-tiny-3;
+        line-height: $line-height-regular;
+        color: $color-neutral-011;
+      }
+    }
+  }
+  &.checked-list{
+    list-style-type: none;
+    padding-left: 0;
+    list-style-image: none;
+    margin-left: 7px;
+    li{
+      margin-bottom: 5px;
+      position: relative;
+      padding-left: 31px;
+      &:before{
+        position: absolute;
+        left: 0;
+        content: "";
+        background-image: url(../Img/icons/check-circle-bullet.svg);
+        width: 16px;
+        height: 16px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 5px;
+
+      }
+    }
+  }
+  &.no-bullets{
+    list-style: none;
+  }
+
+}

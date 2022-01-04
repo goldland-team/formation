@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/refresh-cw</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="_ORGANISMS/Seminar-Empfehlungen" transform="translate(-1365.000000, -110.000000)" stroke="#575757" stroke-width="1.2">
+            <g id="icons/refresh-cw" transform="translate(1366.000000, 111.001317)">
+                <polyline id="Path" stroke-linecap="square" points="13.2 0.598682724 13.2 4.19868272 9.6 4.19868272"></polyline>
+                <polyline id="Path" stroke-linecap="square" points="0 10.1986827 0 6.59868272 3.6 6.59868272"></polyline>
+                <path d="M1.506,3.59868272 C2.12452898,1.85076972 3.5965603,0.542413671 5.40497203,0.133237683 C7.21338376,-0.275938305 9.10526451,0.271290164 10.416,1.58268272 L13.2,4.19868272 M0,6.59868272 L2.784,9.21468272 C4.09473549,10.5260753 5.98661624,11.0733038 7.79502797,10.6641278 C9.6034397,10.2549518 11.075471,8.94659573 11.694,7.19868272" id="Shape" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+
+    @include media-breakpoint-up(sm) {
+        height: 380px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 500px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 720px;
+        width: 100%;
+    }
+}
+
+.news {
+    iframe {
+        width: 100%;
+        height: 180px;
+
+        @include media-breakpoint-up(md) {
+            width: 288px;
+            height: 288px;
+        }
+    }
+
+    .home-news-item {
+        figcaption {
+            display: none;
+        }
+    }
+}

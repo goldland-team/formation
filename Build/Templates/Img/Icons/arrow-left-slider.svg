@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="31px" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/arrow-left-slider</title>
+    <g id="Screendesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="L-Fortbildung-Startseite-v5" transform="translate(-17.000000, -422.000000)" stroke="#FFFFFF" stroke-width="3">
+            <polyline id="icons/arrow-left-slider" transform="translate(26.500000, 437.500000) scale(-1, 1) rotate(-90.000000) translate(-26.500000, -437.500000) " points="14 431 26.5 444 39 431"></polyline>
+        </g>
+    </g>
+</svg>

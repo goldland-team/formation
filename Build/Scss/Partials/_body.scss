@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: $color-white;
+    color: $color-neutral-011;
+    font-family: $font-family-base, $font-family-second;
+    letter-spacing: $letter-spacing-normal;
+    font-size: $font-size-regular;
+    line-height: $line-height-regular;
+}
+
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.font-isonorm {
+    font-family: $font-family-isonorm !important;
+}
+
+main {
+    width: 100%;
+}
+
+.border-top {
+    border-top: 1px solid $color-neutral-003;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $color-neutral-003;
+}
+
+.border-left {
+    border-left: 1px solid $color-neutral-003;
+}
+
+.border-right {
+    border-right: 1px solid $color-neutral-003;
+}
+
+.color-blue {
+    color: $color-blue-011;
+}
+
+.color-gray {
+    color: $color-neutral-008;
+
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.color-dark {
+    color: #484848;
+}
+
+.hide-scroll {
+    overflow: hidden;
+}

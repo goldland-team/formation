@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/check-circle-bullet</title>
+    <g id="Screendesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="L-Fortbildung-Seminare-Landingpage-Bild" transform="translate(-260.000000, -3097.000000)" stroke="#343434" stroke-width="1.2">
+            <g id="Group-2" transform="translate(0.000000, 758.000000)">
+                <g id="Group-4" transform="translate(255.000000, 1723.000000)">
+                    <g id="Group-5" transform="translate(6.000000, 563.000000)">
+                        <g id="icons/check-circle-bullet" transform="translate(0.000000, 54.000000)">
+                            <path d="M14,6.35994423 L14,7.00390168 C13.9982275,10.103777 11.9576115,12.8332656 8.98476085,13.7121892 C6.01191016,14.5911127 2.81500706,13.4100969 1.1277049,10.8095967 C-0.559597261,8.20909644 -0.335355119,4.808594 1.67882672,2.4521529 C3.69300856,0.0957117927 7.01731857,-0.655324609 9.84901172,0.606324341" id="Path"></path>
+                            <polyline id="Path" points="14 1.40427162 7.00001976 8.41080873 4.90002569 6.31094746"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+.tx_evoweb_sfregister {
+    margin: 30px 0;
+
+    @include media-breakpoint-up(md) {
+        margin: 60px 0;
+    }
+
+    form {
+        .special-input-wrapper {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,235 @@
+.icon{
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 100ms ease;
+  background-position: center;
+}
+
+.icon{
+
+  &-arrow{
+    height: 9px;
+    width: 14px;
+    background-image: url(../Img/icons/arrow-white-right.svg);
+  }
+  &-arrow-left{
+    height: 9px;
+    width: 15px;
+    background-image: url(../Img/icons/arrow-left-blue.svg);
+  }
+  &-arrow-right{
+    height: 9px;
+    width: 15px;
+    background-image: url(../Img/icons/arrow-right-blue.svg);
+  }
+  &-arrow-left-slider{
+    height: 40px;
+    width: 56px;
+    background-image: url(../Img/icons/arrow-left-slider.svg);
+  }
+  &-arrow-right-slider{
+    height: 40px;
+    width: 56px;
+    background-image: url(../Img/icons/arrow-right-slider.svg);
+  }
+  &-calendar{
+    height: 14px;
+    width: 12px;
+    background-image: url(../Img/icons/calendar.svg);
+  }
+  &-calendar-seminar{
+    height: 17px;
+    width: 16px;
+    background-image: url(../Img/icons/calendar-seminar-dates.svg);
+  }
+  &-check{
+    height: 11px;
+    width: 15px;
+    background-image: url(../Img/icons/check.svg);
+  }
+  &-check-circle{
+    height: 14px;
+    width: 14px;
+    background-image: url(../Img/icons/check-circle.svg);
+  }
+
+  &-check-bullet{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/check-circle-bullet.svg);
+  }
+
+  &-chevron-down{
+    height: 8px;
+    width: 14px;
+    background-image: url(../Img/icons/checvron-down.svg);
+  }
+
+  &-chevron-up{
+    height: 14px;
+    width: 14px;
+    background-image: url(../Img/icons/chevron-up.svg);
+  }
+
+  &-close{
+    height: 14px;
+    width: 14px;
+    background-image: url(../Img/icons/close-circle.svg);
+  }
+
+  &-dot{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/dot.svg);
+  }
+  &-double-left-arrow{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/double-left-arrows-symbol.svg);
+  }
+  &-double-right-arrow{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/fast-forward-double-right-arrows-symbol.svg);
+  }
+  &-download-arrow{
+    height: 16px;
+    width: 19px;
+    background-image: url(../Img/icons/download-cloud.svg);
+  }
+
+  &-facebook{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/facebook.svg);
+  }
+  &-social-facebook-white{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-facebook-f.svg);
+  }
+
+  &-indicator-active{
+    height: 11px;
+    width: 11px;
+    background-image: url(../Img/icons/indicator-active.svg);
+  }
+  &-indicator-inactive{
+    height: 11px;
+    width: 11px;
+    background-image: url(../Img/icons/indicator-inactive.svg);
+  }
+
+
+  &-linkedin{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/linkedin.svg);
+  }
+  &-xing{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/xing.svg);
+  }
+  &-youtube{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/youtube.svg);
+  }
+  &-twitter-blue{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/twitter-square.svg);
+  }
+  &-linkedin-white{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-linkedin-in.svg);
+  }
+
+  &-mail{
+    height: 13px;
+    width: 16px;
+    background-image: url(../Img/icons/mail.svg);
+  }
+  &-mail-white{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-mail.svg);
+  }
+  &-twitter{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-twitter.svg);
+  }
+  
+  
+  &-social-whatsapp{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-whatsapp.svg);
+  }
+  &-xing-white{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-xing.svg);
+  }
+
+  &-sharing-mail{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/sharing-mail-copy.svg);
+  }
+
+  &-menu{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/menu.svg);
+  }
+  &-menu-close{
+    height: 50px;
+    width: 50px;
+    background-image: url(../Img/icons/menu-close.svg);
+  }
+
+
+  &-phone{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/phone.svg);
+  }
+
+  &-plus-circle{
+    height: 20px;
+    width: 20px;
+    background-image: url(../Img/icons/plus-circle-grey.svg);
+  }
+
+
+  &-printer{
+    height: 16px;
+    width: 16px;
+    background-image: url(../Img/icons/printer.svg);
+  }
+  &-refresh{
+    height: 13px;
+    width: 15px;
+    background-image: url(../Img/icons/refresh-cw.svg);
+  }
+  &-search{
+    height: 22px;
+    width: 22px;
+    background-image: url(../Img/icons/search-white-big.svg);
+  }
+  &-gray-search{
+    height: 14px;
+    width: 14px;
+    background-image: url(../Img/icons/search-grey-small.svg);
+  }
+  &-warning-circle{
+    height: 18px;
+    width: 18px;
+    background-image: url(../Img/icons/warning-circle.svg);
+  }
+}

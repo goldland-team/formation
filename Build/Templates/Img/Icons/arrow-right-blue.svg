@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/arrow-right-blue</title>
+    <g id="Screendesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="L-Fortbildung-Aktuelles-AktuelleMeldungendesVDI" transform="translate(-492.000000, -694.000000)" stroke="#008FD9">
+            <g id="_ORGANISMS/News-Liste" transform="translate(136.000000, 419.000000)">
+                <g id="text" transform="translate(356.000000, 21.000000)">
+                    <g id="icons/arrow-right-blue" transform="translate(0.500000, 254.497096)">
+                        <polyline id="Path" transform="translate(8.999901, 4.001164) scale(-1, 1) rotate(-135.000000) translate(-8.999901, -4.001164) " points="11.8289005 6.83066372 11.8279005 1.17266372 6.1709005 1.17166372"></polyline>
+                        <line x1="13" y1="4.00290393" x2="0" y2="4.00290393" id="Path"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/search-grey-small</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="_MOLECULES/nav" transform="translate(-1214.000000, -21.000000)" stroke="#343434">
+            <g id="meta-navigation" transform="translate(1050.000000, 8.000000)">
+                <g id="Suche" transform="translate(0.000000, 4.000000)">
+                    <g id="icons/search-grey-small" transform="translate(164.500000, 9.500000)">
+                        <circle id="Oval" cx="5" cy="5" r="5"></circle>
+                        <line x1="14.071" y1="14" x2="8.5" y2="8.5" id="Path"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

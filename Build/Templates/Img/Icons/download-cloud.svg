@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/download-cloud</title>
+    <g id="Screendesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="L-Fortbildung-Seminare-Detail" transform="translate(-984.000000, -923.000000)" stroke="#343434" stroke-width="1.2">
+            <g id="Group-2" transform="translate(985.000000, 210.000000)">
+                <g id="Material-Downloads" transform="translate(0.000000, 687.000000)">
+                    <g id="icons/download-cloud" transform="translate(0.000000, 27.000000)">
+                        <polyline id="Path" points="5.41282312 10.8909405 8.50185731 14 11.5908915 10.8909405"></polyline>
+                        <line x1="8.50185731" y1="7.00461615" x2="8.50185731" y2="14" id="Path"></line>
+                        <path d="M15.3595132,11.7381592 C16.7373274,10.7629994 17.3281253,9.00145293 16.8193875,7.38533999 C16.3106497,5.76922706 14.8197769,4.67149545 13.1354086,4.67282153 L12.1623628,4.67282153 C11.5262647,2.17775753 9.42755281,0.33575096 6.88505894,0.0410144654 C4.34256507,-0.253722029 1.88274361,1.05984034 0.699728972,3.3440252 C-0.483285667,5.62821007 -0.144535849,8.41004903 1.55153039,10.3390825" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

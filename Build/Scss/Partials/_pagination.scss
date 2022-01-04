@@ -1,0 +1,166 @@
+/* Dots */
+ul {
+    &.slick-dots {
+        display: flex;
+    }
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+    ul {
+        padding-left:0;
+        list-style: none;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: flex;
+
+        li {
+            font-size: $font-size-xxx-default-mobile;
+            font-weight: $font-weight-light;
+            line-height: $line-height-regular-1;
+            @include media-breakpoint-up(md) {
+                font-size: $font-size-regular-3;
+                line-height: $line-height-regular-2;
+            }
+
+            a {
+                padding: 0 2px;
+                margin: 0 15px;
+                border-bottom: none;
+                font-size: $font-size-xxx-default-mobile;
+                font-weight: $font-weight-light;
+                line-height: $line-height-regular-1;
+                @include media-breakpoint-up(md) {
+                    font-size: $font-size-regular-3;
+                    line-height: $line-height-regular-2;
+                    margin: 0 10px;
+                }
+
+                &:hover {
+                    color: $color-secondary-100;
+                    border-bottom: 1px solid $color-secondary-100;
+
+                }
+            }
+
+            &.current {
+                padding: 0 2px 0px 2px;
+                margin: 0 5px;
+                color: $color-secondary-100;
+                border-bottom: 1px solid $color-secondary-100;
+            }
+        }
+    }
+
+    li {
+        &.previous,
+        &.next {
+            a {
+                margin: 0 10px;
+                border-bottom: none !important;
+            }
+        }
+
+        .left {
+            border-top: 1px solid;
+            border-left: 1px solid;
+            border-color: $color-primary-600;
+            display: inline-block;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            height: 9px;
+            width: 9px;
+            padding: 3px;
+            position: relative;
+            bottom: 2px;
+
+            &:hover {
+                border-color: $color-secondary-100;
+            }
+        }
+
+        .right {
+            border-top: 1px solid;
+            border-right: 1px solid;
+            border-color: $color-primary-600;
+            display: inline-block;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            height: 9px;
+            width: 9px;
+            padding: 3px;
+
+            &:hover {
+                border-color: $color-secondary-100;
+            }
+        }
+    }
+
+    &.ce-pagination {
+        width: 100%;
+
+        ul {
+            li {
+                &.next {
+                    border-top: 1px solid;
+                    border-right: 1px solid;
+                    border-color: $color-primary-600;
+                    display: inline-block;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    height: 9px;
+                    width: 9px;
+                    padding: 3px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        border-color: $color-secondary-100;
+                    }
+
+                }
+
+                &.previous {
+                    border-top: 1px solid;
+                    border-left: 1px solid;
+                    border-color: $color-primary-600;
+                    display: inline-block;
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    height: 9px;
+                    width: 9px;
+                    padding: 3px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        border-color: $color-secondary-100;
+                    }
+                }
+
+                &.current {
+                    a {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-wrapper>* {
+    flex: 1 1 100%;
+}
+
+.right-pagination{
+    p{
+        color: $color-neutral-400;
+    }
+}

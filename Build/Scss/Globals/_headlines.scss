@@ -1,0 +1,90 @@
+h1{
+  color: $color-secondary-007;
+  font-size: $font-size-medium-3;
+  line-height: $line-height-medium-0;
+  font-weight: $font-weight-regular;
+@include media-breakpoint-up(md){
+  font-size: $font-size-xl;
+  line-height: $line-height-large-1;
+}
+  &.small{
+    color: $color-blue-011;
+    font-size: $font-size-medium-1;
+    line-height: $line-height-small-2;
+    font-weight: $font-weight-regular;
+    @include media-breakpoint-up(md){
+      font-size: $font-size-large-0;
+      line-height: $line-height-medium-1;
+    }
+  }
+}
+.h1-tag{
+  @extend h1;
+}
+
+h2{
+  color: $color-black ;
+  font-size: $font-size-medium-1;
+  line-height: $line-height-small-2;
+  font-weight: $font-weight-regular;
+  @include media-breakpoint-up(md){
+    font-size: $font-size-large-0;
+    line-height: $line-height-medium-1;
+  }
+  &.big{
+    color: $color-blue-011;
+    font-size: $font-size-medium-3;
+    line-height: $line-height-medium-0;
+    @include media-breakpoint-up(md){
+      font-size: $font-size-xl;
+      line-height: $line-height-large-1;
+    }
+  }
+  &.seminar-registration{
+    font-size: $font-size-small-1;
+    line-height: $line-height-small-1;
+    color: $color-neutral-011;
+    @include media-breakpoint-up(md){
+      font-size: $font-size-large-0;
+      line-height: $line-height-medium-1;
+      color: $color-blue-011;
+    }
+  }
+  &.small{
+    color: $color-neutral-010;
+    font-size: $font-size-regular;
+    line-height: $line-height-small-2;
+    font-weight: $font-weight-regular;
+    @include media-breakpoint-up(md){
+
+      font-size: $font-size-medium-2;
+      line-height: $line-height-medium-1;
+    }
+  }
+}
+
+h3{
+  color: $color-neutral-010;
+  font-size: $font-size-regular;
+  line-height: $line-height-small-2;
+  font-weight: $font-weight-regular;
+  @include media-breakpoint-up(md){
+    font-size: $font-size-medium-2;
+    line-height: $line-height-medium-1;
+  }
+  &.blue{
+    color: $color-blue-011;
+  }
+}
+
+h4{
+  color: $color-neutral-006;
+  font-size: $line-height-tiny-4;
+  line-height: $line-height-small-2;
+  font-weight: $font-weight-bold;
+
+  @include media-breakpoint-up(md){
+    font-size: $font-size-small-1;
+    line-height: $line-height-tiny-4;
+  }
+}

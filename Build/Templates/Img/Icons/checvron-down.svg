@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/checvron-down</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="_MOLECULES/suche-filter" transform="translate(-322.000000, -151.000000)" stroke="#575757" stroke-width="1.5">
+            <g id="icons/dropdown" transform="translate(137.000000, 114.000000)">
+                <polyline id="icons/checvron-down" points="186 38 192 44 198 38"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

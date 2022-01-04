@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/sharing-facebook-f</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="_MOLECULE/Sharing" transform="translate(-153.000000, 0.000000)">
+            <g id="Group-2" transform="translate(90.000000, 0.000000)">
+                <g id="icons/sharing-facebook-f" transform="translate(63.000000, 0.000000)">
+                    <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="0" y="0" width="18" height="18"></rect>
+                    <path d="M7.32424242,16 L7.32424242,8.84375 L5,8.84375 L5,6 L7.32424242,6 L7.32424242,3.759375 C7.32424242,1.325 8.76666667,0 10.8727273,0 C11.8818182,0 12.7484848,0.078125 13,0.1125 L13,2.65625 L11.5393939,2.65625 C10.3939394,2.65625 10.1727273,3.21875 10.1727273,4.040625 L10.1727273,6 L12.7575758,6 L12.4030303,8.84375 L10.1727273,8.84375 L10.1727273,16" id="Path" fill="#85959D" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

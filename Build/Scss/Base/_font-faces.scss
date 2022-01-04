@@ -1,0 +1,56 @@
+$fonts-path:"../Fonts/";
+$fonts-roboto-path: "#{$fonts-path}roboto-condensed/";
+
+/* Roboto Condensed-300 */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-Light.ttf');
+}
+
+/* Roboto Condensed 300 italic - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-LightItalic.ttf');
+}
+
+/* Roboto Condensed regular - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-Regular.ttf');
+}
+
+/* Roboto Condensed italic */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-Italic.ttf');
+}
+
+/* Roboto Condensed 700 */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-Bold.ttf');
+}
+
+/* Roboto Condensed 700 italic */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('#{$fonts-roboto-path}RobotoCondensed-BoldItalic.ttf');
+}

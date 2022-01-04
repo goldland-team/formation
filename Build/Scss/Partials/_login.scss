@@ -1,0 +1,66 @@
+.login {
+    .special-input-wrapper {
+        width: 100%;
+
+    }
+}
+
+.login-mobile {
+    .buttons-wrapper {
+        position: relative;
+        padding-top: 20px;
+
+        .submit-button {
+            width: 100%;
+            margin-top: 20px;
+            display: block;
+        }
+
+        a {
+            font-size: $font-size-xxx-small-mobile;
+            line-height: $line-height-xx-default-mobile;
+        }
+
+        a {
+            &.forget-password {
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+
+    form {
+        label {
+            margin-bottom: 0;
+            position: absolute;
+            top: -12px;
+            left: 13px;
+            background-color: $color-white;
+            z-index: 3;
+            padding: 0 5px;
+            color: $color-primary-200;
+        }
+
+        .message-error {
+
+            h4 {
+                color: $color-primary-100;
+                padding-bottom: 10px;
+                text-align: center;
+
+            }
+
+            p {
+                margin-bottom: 10px;
+                text-align: justify;
+                font-size: $font-size-xxx-small-mobile;
+                line-height: $line-height-x-small-mobile;
+            }
+        }
+
+        .special-input-wrapper {
+            width: 100%;
+
+        }
+    }
+}

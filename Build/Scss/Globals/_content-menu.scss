@@ -1,0 +1,92 @@
+.content-menu {
+    height: 58px;
+    background-color: $color-primary-900;
+
+    @include media-breakpoint-up(lg) {
+        height: auto;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    ul {
+        &.menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+
+            @include media-breakpoint-up(lg) {
+                margin: 0 100px;
+            }
+
+            .menu-item {
+                padding: 16px 10px;
+
+                @include media-breakpoint-up(lg) {
+                    padding: 20px 10px 20px 10px;
+                }
+
+                a {
+                    &.menu-link {
+                        @extend .regular;
+
+                        &.active {
+                            border-bottom: 1px solid $color-primary-200;
+                            color: $color-primary-200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark-blue {
+        background-color: $color-primary-400;
+
+        ul {
+            &.menu {
+                .menu-item {
+                    a {
+                        color: $color-white;
+
+                        &:hover {
+                            color: $color-primary-200;
+                        }
+
+                        &.active {
+                            color: $color-primary-200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-next {
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 70px;
+        height: 100%;
+        pointer-events: none;
+        background: linear-gradient(90deg, rgba(235, 237, 242, 0) 0%, #EBEDF2 100%);
+        transform: none;
+
+        &:before {
+            content: url("../Img/Icons/icon-double-arrow.svg");
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+        height: 100%;
+        display: none !important;
+    }
+}

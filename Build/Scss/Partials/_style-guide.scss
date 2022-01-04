@@ -1,0 +1,97 @@
+.style-guide{
+  .style-logo{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .sg-box-color{
+    width: 100%;
+    height: 50px;
+  }
+  .text-table{
+    tr{
+      td:first-child{
+        width: 20%;
+      }
+      td:nth-child(2){
+        width: 30%;
+      }
+    }
+  }
+  .list-table{
+    tr{
+      td{
+        width: 50%;
+      }
+    }
+  }
+  .sg-icon-card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+    margin-bottom: 10px;
+    background: $color-white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.white-icon{
+      background-color: $color-secondary-007;
+      color: $color-white;
+    }
+  }
+  .sg-list-wrapper{
+    background-color: $color-secondary-007;
+    width: 100%;
+    padding: 20px;
+  }
+  .nav-pills{
+    a {
+      color:$color-secondary-007;
+      
+      &.nav-link{
+        color:$color-secondary-007;
+      }
+      &.nav-link-list{
+        color:$color-secondary-007;
+        background-color:$color-white;
+        list-style: disc!important;
+        padding-left: 0;
+      }
+      &.active{
+        background-color:$color-secondary-007;
+        color: $color-white;
+      }
+  
+    }
+  
+  }
+  .expresion {
+    color: $color-secondary-007;
+  }
+  h1,h2 {
+    &.mb-20{
+    margin-top: 35px!important;
+    }
+  }
+  ul{
+    &.first {
+      list-style: none;
+    } 
+    &.second {
+      margin-left: 30px;
+      list-style: none; /* Remove default bullets */
+       li{
+          &:before{
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+           color: $color-secondary-007;
+           font-weight: bold; /* If you want it to be bold */
+           display: inline-block; /* Needed to add space between the bullet and the text */
+           width: 1em; /* Also needed for space (tweak if needed) */
+           margin-left: -1em; /* Also needed for space (tweak if needed) */
+    
+  }
+}
+    }
+   
+  }
+}

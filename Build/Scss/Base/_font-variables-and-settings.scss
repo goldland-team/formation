@@ -1,0 +1,75 @@
+/* ------------------------------------
+  Font-weight
+ ------------------------------------ */
+$font-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-black: 900;
+
+/* ------------------------------------
+   letter-spacing
+  ------------------------------------ */
+$letter-spacing-small: -0.1px;
+$letter-spacing-normal: 0;
+
+/* ------------------------------------
+   Font-styles
+  ------------------------------------ */
+$font-style-italic: italic;
+$font-style-normal: normal;
+
+
+/* ------------------------------------
+   Font-size
+  ------------------------------------ */
+$font-size-tiny-0 :11px;
+$font-size-tiny-1 :13px;
+$font-size-tiny-3 :14px;
+$font-size-small-0 :15px;
+$font-size-small-1 :16px;
+$font-size-small-2 :17px;
+$font-size-regular :18px;
+$font-size-medium-0 :19px;
+$font-size-medium-1 :20px;
+$font-size-medium-2 :22px;
+$font-size-medium-3 :24px;
+$font-size-large-0 :26px;
+$font-size-large-1 :28px;
+$font-size-large-2 :32px;
+$font-size-xl :36px;
+
+
+/* ------------------------------------
+  Line Heights
+  ------------------------------------ */
+
+
+$line-height-tiny-0 :13px;
+$line-height-tiny-1 :15px;
+$line-height-tiny-2 :16px;
+$line-height-tiny-3 :18px;
+$line-height-tiny-4 :19px;
+$line-height-small-0 :20px;
+$line-height-small-1 :21px;
+$line-height-small-2 :22px;
+$line-height-small-3 :23px;
+$line-height-small-4 :24px;
+$line-height-small-5 :25px;
+$line-height-regular :27px;
+$line-height-medium-0 :28px;
+$line-height-medium-1 :30px;
+$line-height-medium-2 :33px;
+$line-height-medium-3 :34px;
+$line-height-large-0 :35px;
+$line-height-large-1 :41px;
+$line-height-large-2 :45px;
+$line-height-large-3 : 36px;
+
+$font-family-source: 'Roboto Condensed';
+$font-family-isonorm: 'Isonorm3098 LW20';
+$font-family-base: $font-family-source;
+$font-family-second: "Nevada"
