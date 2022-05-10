@@ -33,7 +33,7 @@
                         show := addToList(docsitepackage_teaserimagetext)
                     }
                 </pre>
-<p>- Content element wizard with thCTypee new content element</p>
+<p>- Content element wizard with the CType new content element</p>
 <img src="Img/Capture2.png" style=" width: auto;"><br><br>
 <p>- Do not forget to add the declaration of the content element in the language file:</p>
 => <span class="expresion">Ressources/Private/Language/locallang_be.xlf</span><br><br>
